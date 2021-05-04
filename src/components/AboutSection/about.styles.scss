@@ -1,0 +1,38 @@
+#about {
+	//background-color: #ccc;
+	//height: 350px;
+
+	.about-me {
+		color: #616161;
+	}
+}
+
+/*
+.about-me:hover:after {
+  width: 100%;
+  left: 0;
+}*/
+
+.social-icons {
+	margin-left: 5em;
+
+	a {
+		color: #999595;
+		margin-right: 1em;
+		i {
+			&:hover {
+				transform: scale(0.9);
+				transition: 0.3s all ease-in-out;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.pl-xs-0 {
+		padding-left: 0 !important;
+	}
+	.social-icons {
+		margin-left: 0;
+	}
+}

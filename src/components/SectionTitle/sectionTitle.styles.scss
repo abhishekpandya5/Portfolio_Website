@@ -1,0 +1,26 @@
+.hover-underline {
+	position: relative;
+	cursor: pointer;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0px;
+		height: 2px;
+		background-color: #343a40;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	}
+	&:hover:after {
+		width: 100%;
+		left: 0;
+	}
+
+	a {
+		color: inherit;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
