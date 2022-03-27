@@ -1,0 +1,20 @@
+.tech-stack-container {
+	margin: 50px auto 50px;
+
+	.stack-icons {
+		display: inline-block;
+		margin: 12px;
+
+		svg {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	.stack-desc {
+		width: 200px;
+		height: auto;
+		padding: 10px;
+		position: absolute;
+	}
+}

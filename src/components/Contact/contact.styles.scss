@@ -1,0 +1,15 @@
+#contact {
+	.content {
+		width: 50%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	#contact {
+		.content {
+			width: 100%;
+			text-align: justify;
+		}
+	}
+}

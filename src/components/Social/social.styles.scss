@@ -1,0 +1,50 @@
+.social {
+	font-size: 1.1em;
+	position: fixed;
+	top: 20%;
+	right: 3%;
+	color: #fff;
+	z-index: 1;
+
+	.social-icons {
+		a {
+			svg {
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		height: 0.005em;
+		width: 100px;
+		background-color: #fff;
+		transform: rotate(90deg);
+		right: -38px;
+		top: 275px;
+	}
+}
+
+@media (max-width: 576px) {
+	.social {
+		position: static;
+		.text-vertical {
+			writing-mode: unset;
+			display: inline-block;
+			padding: 0 10px;
+			font-size: 1.15em;
+		}
+		.social-icons {
+			display: inline-block !important;
+			flex-direction: row !important;
+			a {
+				margin: 5px;
+			}
+		}
+		&::after {
+			content: none;
+		}
+	}
+}

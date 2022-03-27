@@ -8,7 +8,9 @@ $violet_color: #363d4f;
 }*/
 .header-navbar {
 	//background: rgba(180, 180, 180, 0.3);
-	background-color: #415b7c;
+	// background-color: #415b7c;
+	// background-color: #133054;
+	background-color: #113b5e;
 	// background-color: rgba(35, 100, 168, 0.1);
 	box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
 	position: fixed;
@@ -17,8 +19,8 @@ $violet_color: #363d4f;
 	z-index: 10;
 	transition: padding 0.6s ease;
 
-	#shrink-header {
-		transition: padding 0.3s ease;
+	#shrinkHeader {
+		transition: 0.8s ease-out, padding 0.8s ease-out;
 	}
 
 	.smaller {
@@ -41,13 +43,14 @@ $violet_color: #363d4f;
 }
 header {
 	position: relative;
-	height: 596px;
+	// height: 596px;
 	// overflow: hidden;
-	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-90/animated-svg-bg.svg');
-	background-position: center;
+	// background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-90/animated-svg-bg.svg');
+	background-image: url('../../assets/images/header-bg.svg');
+	// background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 
 	.banner {
 		position: absolute;
@@ -55,8 +58,15 @@ header {
 		left: 50%;
 		transform: translate(-50%, -50%);
 
+		.intro-text {
+			font-size: 1em;
+		}
+		.intro-text-desc {
+			font-size: 2em;
+		}
+
 		.hire {
-			margin-top: 20px;
+			// margin-top: 20px;
 			&:hover {
 				opacity: 0.9;
 			}
@@ -73,30 +83,53 @@ header {
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	// &::before {
+	// 	content: '';
+	//   position: absolute;
+	//   top: 0;
+	//   left: 0;
+	//   right: 0;
+	//   bottom: 0;
+	// 	box-shadow: inset 0 0 2000px rgba(0, 0, 0, .5);
+	//   filter: blur(1px);
+	// 	background: inherit;
+	// }
 }
 
 @media (max-width: 576px) {
 	header {
-		background-position: 0 0;
-		background-repeat: repeat;
+		background-position: 10%;
+		height: 300px !important;
+		.btn-down {
+			bottom: 15px;
+		}
+		.banner {
+			.intro-text-desc {
+				font-size: 1.5em;
+			}
+			.hire {
+				font-size: 0.8em;
+			}
+		}
+		.scroll-bottom {
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
 	}
-	.loading {
-		animation: loading 10s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
-		// -webkit-animation: loading 4s infinite linear;
-		// -moz-animation: loading 4s infinite linear;
-		// -ms-animation: loading 4s infinite linear;
-		// -o-animation: loading 4s infinite linear;
-		// animation: loading 4s infinite linear;
-	}
+	// .loading {
+	// 	animation: loading 10s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	// }
 
-	@keyframes loading {
-		0% {
-			background-position: 0 0;
-		}
-		100% {
-			background-position: -100% 0;
-		}
-	}
+	// @keyframes loading {
+	// 	0% {
+	// 		background-position: 0 0;
+	// 	}
+	// 	100% {
+	// 		background-position: -100% 0;
+	// 	}
+	// }
 }
 
 // 	@-moz-keyframes loading {

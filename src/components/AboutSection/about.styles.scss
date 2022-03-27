@@ -4,6 +4,19 @@
 
 	.about-me {
 		color: #616161;
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.projects-btn {
+		&:hover {
+			background-color: transparent;
+			color: unset;
+		}
+		&:focus {
+			box-shadow: none;
+		}
 	}
 }
 
@@ -13,26 +26,26 @@
   left: 0;
 }*/
 
-.social-icons {
-	margin-left: 5em;
+// .social-icons {
+// 	margin-left: 1em;
 
-	a {
-		color: #999595;
-		margin-right: 1em;
-		i {
-			&:hover {
-				transform: scale(0.9);
-				transition: 0.3s all ease-in-out;
-			}
-		}
-	}
-}
+// 	a {
+// 		color: #999595;
+// 		margin-right: 1em;
+// 		i {
+// 			&:hover {
+// 				transform: scale(0.9);
+// 				transition: 0.3s all ease-in-out;
+// 			}
+// 		}
+// 	}
+// }
 
 @media (max-width: 576px) {
 	.pl-xs-0 {
 		padding-left: 0 !important;
 	}
-	.social-icons {
-		margin-left: 0;
-	}
+	// .social-icons {
+	// 	margin-left: 0;
+	// }
 }

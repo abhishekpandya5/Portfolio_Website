@@ -7,6 +7,8 @@
 body {
 	margin: 0;
 	font-family: 'Muli', sans-serif;
+	background-color: #081d2f;
+	color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -26,9 +28,29 @@ body {
 }
 
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 }
 
-#education {
-	height: 550px;
+.hover-icons {
+	&:hover {
+		svg {
+			transform: scale(1.25);
+			transition: all 0.2s linear;
+		}
+	}
+}
+
+.border-bottom {
+	border-bottom: 2px solid #152b46 !important;
+}
+
+.text-vertical {
+	writing-mode: vertical-lr;
+}
+
+.btn.focus,
+.btn:focus,
+button:focus {
+	box-shadow: none !important;
+	outline: none;
 }
