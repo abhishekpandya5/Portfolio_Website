@@ -18,3 +18,13 @@
 		position: absolute;
 	}
 }
+
+.toolTip {
+	position: absolute;
+	max-width: 235px;
+	background: #fff;
+	color: #000;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 0.9em;
+}
