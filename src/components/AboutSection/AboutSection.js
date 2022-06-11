@@ -25,7 +25,7 @@ const AboutSection = () => {
 							<span role="img" aria-label="waving hand">
 								👋
 							</span>{' '}
-							I'm Abhishek Pandya, a Software Enginner, experienced in Front End
+							I'm Abhishek Pandya, a Software Engineer, experienced in Front End
 							Web Developement, skilled in Web Technologies and framework. I
 							like to create mordern UI and building websites from the ground
 							up.
