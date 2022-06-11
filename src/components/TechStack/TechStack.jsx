@@ -8,9 +8,9 @@ const TechStack = () => {
 	// const [leftPos, setLeftPos] = useState(0);
 	// const [topPos, setTopPos] = useState(0);
 
-	const handleHover = (e) => {
-		console.log(e);
-	};
+	// const handleHover = (e) => {
+	// 	console.log(e);
+	// };
 
 	return (
 		<section id="techStack">
@@ -26,7 +26,13 @@ const TechStack = () => {
 							key={idx}
 							className="stack-icons hover-icons"
 							style={{ color: item.color }}
-							onMouseEnter={(e) => handleHover}
+							data-tip={item.desc}
+							data-class="stacks-tooltip"
+							data-place="top"
+							data-multiline="true"
+							data-type="light"
+
+							// onMouseEnter={(e) => handleHover}
 						>
 							{<item.icon />}
 						</div>

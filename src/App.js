@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactTooltip from 'react-tooltip';
 import { BackgroundSeparator } from './components/BackgroundSeparator/BackgroundSeparator';
 import bgImage1 from './assets/images/custom-bg1.jpg';
 import Header from './components/Header/Header';
@@ -20,7 +21,7 @@ const App = () => {
 			<Projects />
 			<Contact />
 			<Footer />
-		
+			<ReactTooltip />
 		</>
 	);
 };
