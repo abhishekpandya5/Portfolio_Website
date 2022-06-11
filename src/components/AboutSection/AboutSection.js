@@ -21,9 +21,14 @@ const AboutSection = () => {
 				<div className="about-me text-white my-4">
 					<div className="col-lg-12 pl-md-0">
 						<p className="py-2 text-justify">
-							My name is Abhishek Pandya, I'm a Software Enginner. I am an
-							experienced Front End Web Developer, I build websites from the
-							ground up.
+							Hi there,{' '}
+							<span role="img" aria-label="waving hand">
+								👋
+							</span>{' '}
+							I'm Abhishek Pandya, a Software Enginner, experienced in Front End
+							Web Developement, skilled in Web Technologies and framework. I
+							like to create mordern UI and building websites from the ground
+							up.
 						</p>
 					</div>
 
